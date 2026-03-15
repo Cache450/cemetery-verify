@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useCallback, useMemo } from "react";
+const { useState, useEffect, useRef, useCallback, useMemo } = React;
 
 /* ═══════════════════════════════════════════
    BINARY PARSERS
@@ -183,7 +183,7 @@ function base64ToUint8(b64) {
 /* ═══════════════════════════════════════════
    MAIN APP
    ═══════════════════════════════════════════ */
-export default function CemeteryV3() {
+function CemeteryV3() {
   const [plots, setPlots] = useState([]); // { geometry, attrs, centroid }
   const [loaded, setLoaded] = useState(false);
   const [fieldMap, setFieldMap] = useState(null); // maps our keys to actual field names
